@@ -14,5 +14,8 @@ Sol 3: SELECT first_name,last_name,birth_date FROM patients
        AND birth_date < '1980-01-01'
        ORDER BY birth_date ASC;
 
+Sol 4: SELECT first_name,last_name,birth_date FROM patients
+       WHERE birth_date LIKE '197%'
+       ORDER BY birth_date ASC;
 
 
