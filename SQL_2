@@ -1,3 +1,7 @@
-Query 2: 
+Query 2: Show first name, last name and role of every person that is either patient or doctor.
+         The roles are either "Patient" or "Doctor"
 
-Sol:   
+Sol: SELECT first_name, last_name, 'PATIENT' AS role from patients
+     UNION ALL
+     SELECT first_name, last_name, 'DOCTOR' AS role from doctors;
+  
