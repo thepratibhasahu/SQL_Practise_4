@@ -2,7 +2,7 @@ Query 4: Show the province_id(s), sum of height; where the total sum of its pati
 
 Sol 1: select province_id,sum(height) AS sum_height from patients
        group by province_id
-       having sum(height) >= 7000 
+       having sum(height) >= 7000;
 
 Sol 2: SELECT * FROM (SELECT province_id, SUM(height) AS sum_height FROM patients
        GROUP BY province_id) 
